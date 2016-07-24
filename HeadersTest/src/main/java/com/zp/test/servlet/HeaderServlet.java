@@ -75,8 +75,8 @@ public class HeaderServlet extends HttpServlet {
 //        	response.setContentType("text/html; charset=ISO-8859-1");
 //        }
         ResourceBundle lang=ResourceBundle.getBundle("com.zp.test.servlet.lang_zh_CN",Locale.SIMPLIFIED_CHINESE);
-//        response.getWriter().append(lang.getString("${welcome}")+"<br/>");
-        response.getWriter().append(lang.getString(val)+"<br/>");
+        response.getWriter().append(lang.getString("welcome")+"<br/>");
+//        response.getWriter().append(lang.getString(val)+"<br/>");
 	}
 	
 	public Map<String, String> GetHeaders(HttpServletRequest request,HttpServletResponse response) throws IOException {
